@@ -29,7 +29,7 @@ public class CountryDaoImpl extends HibernateUtil implements CrudDao<Country, Lo
 
     @Override
     public void create(Country country) {
-        Transaction t = getCurrentSession().beginTransaction();
+        Transaction t = getCurrentSession().getTransaction();
         t.begin();
         getCurrentSession().save(country);
         t.commit();

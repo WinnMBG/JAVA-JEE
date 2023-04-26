@@ -34,7 +34,7 @@ public class CityDaoImpl extends HibernateUtil implements CrudDao<City, Long> {
 
     @Override
     public void create(City city) {
-        Transaction t = getCurrentSession().beginTransaction();
+        Transaction t = getCurrentSession().getTransaction();
         t.begin();
         getCurrentSession().save(city);
         t.commit();
