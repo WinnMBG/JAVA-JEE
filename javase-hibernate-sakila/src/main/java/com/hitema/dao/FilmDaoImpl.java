@@ -3,6 +3,7 @@ package com.hitema.dao;
 import com.hitema.entities.Film;
 import com.hitema.util.CrudDao;
 import com.hitema.util.HibernateUtil;
+import jakarta.persistence.Query;
 import org.hibernate.Transaction;
 
 import java.util.List;
@@ -45,5 +46,17 @@ public class FilmDaoImpl extends HibernateUtil implements CrudDao<Film, Long> {
         f.setTitle(title);
         getCurrentSession().save(f);
         t.commit();
+    }
+
+    public List<Film> searchByFilm(String title){
+        try{
+            return getCurrentSession()
+                    .createQuery("FROM Film WHERE title LIKE :title", Film.class)
+                    .setParameter("title", "%"+title+"%")
+                    .getResultList();
+        }catch (Exception e){
+            System.out.println("Erreur lors de la récupération des données");
+            return null;
+        }
     }
 }

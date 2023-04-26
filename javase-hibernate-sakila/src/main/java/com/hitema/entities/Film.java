@@ -22,6 +22,11 @@ public class Film {
 
     @Column(name = "release_year")
     private String releaseYear;
+    @Column(name = "language_id")
+    private Long languageId;
+
+    @Column(name = "original_language_id")
+    private Long originalLanguageId;
 
     @Column(name = "rental_duration")
     private int rentalDuration;
@@ -44,7 +49,6 @@ public class Film {
 
     @Column(name = "last_update")
     private LocalDateTime lastUpdate;
-
 
     public Long getId() {
         return id;
@@ -78,6 +82,21 @@ public class Film {
         this.releaseYear = releaseYear;
     }
 
+    public Long getLanguageId() {
+        return languageId;
+    }
+
+    public void setLanguageId(Long languageId) {
+        this.languageId = languageId;
+    }
+
+    public Long getOriginalLanguageId() {
+        return originalLanguageId;
+    }
+
+    public void setOriginalLanguageId(Long originalLanguageId) {
+        this.originalLanguageId = originalLanguageId;
+    }
 
     public int getRentalDuration() {
         return rentalDuration;
@@ -146,6 +165,8 @@ public class Film {
         sb.append(", title='").append(title).append('\'');
         sb.append(", description='").append(description).append('\'');
         sb.append(", releaseYear=").append(releaseYear);
+        sb.append(", languageId=").append(languageId);
+        sb.append(", originalLanguageId=").append(originalLanguageId);
         sb.append(", rentalDuration=").append(rentalDuration);
         sb.append(", rentalRate=").append(rentalRate);
         sb.append(", length=").append(length);
