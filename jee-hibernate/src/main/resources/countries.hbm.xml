@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hitema.entities">
+    <class name="com.hitema.entities.Country" table="country">
+        <id name="id" type="int">
+            <column name="country_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="country" />
+        </property>
+    </class>
+</hibernate-mapping>
