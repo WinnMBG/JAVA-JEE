@@ -2,17 +2,18 @@ package com.hitema.dao;
 
 import com.hitema.entities.Country;
 import com.hitema.entities.Film;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class FilmDaoTest {
 
     @Test
+    @Order(1)
     void create() {
         FilmDaoImpl dao = new FilmDaoImpl();
         Film film = new Film();
@@ -26,6 +27,7 @@ class FilmDaoTest {
     }
 
     @Test
+    @Order(2)
     void get() {
         FilmDaoImpl dao = new FilmDaoImpl();
         Film film = dao.get(1L);
@@ -33,6 +35,7 @@ class FilmDaoTest {
     }
 
     @Test
+    @Order(3)
     void testSearchById() {
         FilmDaoImpl dao = new FilmDaoImpl();
         List<Film> films = dao.searchByFilm("PUNK");
@@ -43,6 +46,7 @@ class FilmDaoTest {
     }
 
     @Test
+    @Order(4)
     void getAll() {
         FilmDaoImpl dao = new FilmDaoImpl();
         List<Film> films = dao.getAll();
@@ -50,18 +54,20 @@ class FilmDaoTest {
     }
 
     @Test
+    @Order(5)
     void update() {
        FilmDaoImpl dao = new FilmDaoImpl();
        Film film = new Film();
-       dao.update(1001L, "MY MOVIE 2.0");
-       Film f = dao.get(1001L);
+       dao.update(1007L, "MY MOVIE 2.0");
+       Film f = dao.get(1007L);
        assertTrue(f.getTitle().equals("MY MOVIE 2.0"), "ERROR no modification");
     }
 
     @Test
+    @Order(6)
     void delete() {
         FilmDaoImpl dao = new FilmDaoImpl();
-        dao.delete(1001L);
+        dao.delete(1007L);
         List<Film> films = dao.getAll();
         assertTrue(films.size() == 1000, "ERROR no delete...");
     }

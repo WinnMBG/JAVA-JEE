@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.hitema.dao.CountryDaoImplTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.994 s <<< FAILURE! - in com.hitema.dao.CountryDaoImplTest
+read  Time elapsed: 0.115 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: ERROR DB seems corrupted !!!! ==> expected: <true> but was: <false>
+	at com.hitema.dao.CountryDaoImplTest.read(CountryDaoImplTest.java:30)
+
