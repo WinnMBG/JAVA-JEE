@@ -38,7 +38,7 @@ class FilmDaoImplTest {
     void getFilmFromActor() {
         log.info("<<<<<READ FILM>>>>>");
         assertNotNull(actorDao,"DAO NOT INSTANCED !!!");
-        var actor = actorDao.read(35l);
+        var actor = actorDao.read(1l);
         assertNotNull(actor,"WARNING FILM 1 not Found !!!");
         log.trace("L'acteur nommé {} {} a joué dans les films suivants:",actor.getFirstname(), actor.getLastname());
         actor.getFilms().forEach(f -> log.trace("{}", f));
@@ -50,7 +50,7 @@ class FilmDaoImplTest {
     void getActorsFromFilm() {
         log.info("<<<<<READ ACTORS>>>>>");
         assertNotNull(filmDao,"DAO NOT INSTANCED !!!");
-        var film = filmDao.read(35l);
+        var film = filmDao.read(86l);
         assertNotNull(film,"WARNING FILM 1 not Found !!!");
         log.trace("Voici le casting du film {}", film.getTitle());
         film.getActors().forEach(f -> log.trace("{}", f));

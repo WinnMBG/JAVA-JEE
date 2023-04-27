@@ -1,6 +1,7 @@
 package com.hitema.dao;
 
 import com.hitema.entities.Actor;
+import com.hitema.entities.Film;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ public class ActorDaoImpl extends AbstractDao implements Dao<Actor, Long> {
 
     @Override
     public Actor read(Long id) {
-        return null;
+        return getCurrentSession().find(Actor.class, id);
     }
 
     @Override
@@ -27,6 +28,6 @@ public class ActorDaoImpl extends AbstractDao implements Dao<Actor, Long> {
 
     @Override
     public List<Actor> findAll() {
-        return null;
+        return getCurrentSession().createQuery("from Actor").getResultList();
     }
 }

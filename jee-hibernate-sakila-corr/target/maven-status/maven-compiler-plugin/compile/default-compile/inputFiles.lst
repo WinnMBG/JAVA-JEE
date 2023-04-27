@@ -1,6 +1,11 @@
-D:\Ecoles\HITEMA\2022-2023\M1 - Web - Dev\JAVA-EE\Projets\jee-hibernate-sakila\src\main\java\com\hitema\dao\CountryDaoImpl.java
-D:\Ecoles\HITEMA\2022-2023\M1 - Web - Dev\JAVA-EE\Projets\jee-hibernate-sakila\src\main\java\com\hitema\entities\Film.java
-D:\Ecoles\HITEMA\2022-2023\M1 - Web - Dev\JAVA-EE\Projets\jee-hibernate-sakila\src\main\java\com\hitema\dao\AbstractDao.java
-D:\Ecoles\HITEMA\2022-2023\M1 - Web - Dev\JAVA-EE\Projets\jee-hibernate-sakila\src\main\java\com\hitema\dao\Dao.java
-D:\Ecoles\HITEMA\2022-2023\M1 - Web - Dev\JAVA-EE\Projets\jee-hibernate-sakila\src\main\java\com\hitema\dao\FilmDaoImpl.java
-D:\Ecoles\HITEMA\2022-2023\M1 - Web - Dev\JAVA-EE\Projets\jee-hibernate-sakila\src\main\java\com\hitema\entities\Country.java
+C:\Users\winn7\Bureau\DeveloppementPerso\JAVA-JEE\Projets\jee-hibernate-sakila-corr\src\main\java\com\hitema\entities\Country.java
+C:\Users\winn7\Bureau\DeveloppementPerso\JAVA-JEE\Projets\jee-hibernate-sakila-corr\src\main\java\com\hitema\dao\CityDaoImpl.java
+C:\Users\winn7\Bureau\DeveloppementPerso\JAVA-JEE\Projets\jee-hibernate-sakila-corr\src\main\java\com\hitema\entities\City.java
+C:\Users\winn7\Bureau\DeveloppementPerso\JAVA-JEE\Projets\jee-hibernate-sakila-corr\src\main\java\com\hitema\entities\Actor.java
+C:\Users\winn7\Bureau\DeveloppementPerso\JAVA-JEE\Projets\jee-hibernate-sakila-corr\src\main\java\com\hitema\dao\AbstractDao.java
+C:\Users\winn7\Bureau\DeveloppementPerso\JAVA-JEE\Projets\jee-hibernate-sakila-corr\src\main\java\com\hitema\dao\FilmDaoImpl.java
+C:\Users\winn7\Bureau\DeveloppementPerso\JAVA-JEE\Projets\jee-hibernate-sakila-corr\src\main\java\com\hitema\dao\ActorDaoImpl.java
+C:\Users\winn7\Bureau\DeveloppementPerso\JAVA-JEE\Projets\jee-hibernate-sakila-corr\src\main\java\com\hitema\dao\CountryDaoImpl.java
+C:\Users\winn7\Bureau\DeveloppementPerso\JAVA-JEE\Projets\jee-hibernate-sakila-corr\src\main\java\com\hitema\entities\Film.java
+C:\Users\winn7\Bureau\DeveloppementPerso\JAVA-JEE\Projets\jee-hibernate-sakila-corr\src\main\java\com\hitema\Main.java
+C:\Users\winn7\Bureau\DeveloppementPerso\JAVA-JEE\Projets\jee-hibernate-sakila-corr\src\main\java\com\hitema\dao\Dao.java
